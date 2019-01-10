@@ -1,0 +1,1 @@
+{"nombre":"Indicador_Nodo","columnas":["indicador","nodo","nodo_tipo","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado","valor","tipo_desagregado"],"llaves":["indicador_nodo"]}

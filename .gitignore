@@ -1,0 +1,7 @@
+node_modules/
+nodo_archivos/
+db_config.json
+*.csv
+*.xml
+utils/*.json
+package-lock.json

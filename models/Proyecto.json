@@ -1,0 +1,1 @@
+{"nombre":"Proyecto","columnas":["edt","nombre","name","descripcion","fecha_inicio_plan","fecha_fin_plan","fecha_inicio_real","fecha_fin_real","duracion","fecha_fin_limite","progreso","programa","id","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["proyecto"]}

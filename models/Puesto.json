@@ -1,0 +1,1 @@
+{"nombre":"Puesto","columnas":["nombre","descripcion","entidad","usuario","rol","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["puesto"]}

@@ -1,0 +1,1 @@
+{"nombre":"Nodo_Archivo","columnas":["nombre","nombre_fisico","path","tipo","nodo","nodo_tipo","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["nodo_archivo"]}

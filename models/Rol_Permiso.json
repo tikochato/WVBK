@@ -1,0 +1,1 @@
+{"nombre":"Rol_Permiso","columnas":["crear","visualizar","actualizar","eliminar"],"llaves":["rol","permiso"]}

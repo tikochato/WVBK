@@ -1,0 +1,1 @@
+{"nombre":"Entidad","columnas":["nombre","descripcion","es_prime","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["entidad"]}

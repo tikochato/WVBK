@@ -1,0 +1,1 @@
+{"nombre":"Persona","columnas":["trato","nombres","apellidos","fecha_nacimiento","telefono","celular","correo","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["persona"]}

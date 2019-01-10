@@ -1,0 +1,1 @@
+{"nombre":"Categoria_Indicador","columnas":["nombre","indicador_id","indicador_id_old","categoria_indicador_padre","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["categoria_indicador"]}

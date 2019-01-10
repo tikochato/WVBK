@@ -1,0 +1,1 @@
+{"nombre":"Registro_Indicador_Nodo","columnas":["indicador","nodo","nodo_tipo","tipo_registro_indicador","valor","mes","anio","dia"],"llaves":["registro_indicador_nodo"]}

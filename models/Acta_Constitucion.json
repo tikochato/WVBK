@@ -1,0 +1,1 @@
+{"nombre":"Acta_Constitucion","columnas":["socio_implementador","codigo","responsable","fecha_acta","racionalidad","objetivos","modelo_intervencion","alcance","riesgos","supuestos","restricciones","estructura_gerencial","control_cambios","aprobado_por","aprobrado","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["proyecto","entidad"]}

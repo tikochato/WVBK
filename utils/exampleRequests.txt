@@ -1,0 +1,65 @@
+PROYECTOS
+--editar
+curl -H "Content-Type: application/json" -X POST -d '{"proyecto":{ "programa":"2","proyecto":"2"  ,"nombre":"nueva nueva edición de proyecto", "descripcion":"edición de programa","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/proyectos/edit
+-- crear
+curl -H "Content-Type: application/json" -X POST -d '{"proyecto":{ "programa":"2","proyecto":"0"  ,"nombre":"ejemplo de edición de proyecto", "descripcion":"edición de programa","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/proyectos/create
+
+
+PROGRAMAS
+--crear
+curl -H "Content-Type: application/json" -X POST -d '{"programa":{ "programa":"0" ,"nombre":"crear programa", "descripcion":"descripcion programa","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/programas/create
+-- crear
+curl -H "Content-Type: application/json" -X POST -d '{"programa":{ "programa":"4","nombre":"ejemplo de edición de programa", "descripcion":"edición de programa","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/programas/edit
+
+
+RESULTADO
+--crear
+curl -H "Content-Type: application/json" -X POST -d '{"resultado":{ "resultado":"0" ,"proyecto":"3","nombre":"crear resultado", "descripcion":"descripcion resultado","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/resultados/create
+-- editaar
+curl -H "Content-Type: application/json" -X POST -d '{"resultado":{ "resultado":"1","nombre":"ejemplo de edición de nombre de resultado", "descripcion":"edición de resultado","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/resultados/edit
+
+
+RESULTADO INTERMEDIO
+--crear
+curl -H "Content-Type: application/json" -X POST -d '{"resultado_intermedio":{ "resultado_intermedio":"0" ,"resultado":"1","nombre":"crear resultado intermedio", "descripcion":"descripcion resultado intermedio","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/resultados_intermedios/create
+--editar
+curl -H "Content-Type: application/json" -X POST -d '{"resultado_intermedio":{ "resultado_intermedio":"1","nombre":"ejemplo de edición de nombre de resultado intermedio", "descripcion":"edición de resultado intermedio","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/resultados_intermedios/edit
+
+ACTIVIDAD
+--crear
+curl -H "Content-Type: application/json" -X POST -d '{"actividad":{ "actividad":"0" ,"resultado_intermedio":"1","nombre":"crear actividad", "descripcion":"descripcion actividad","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/actividades/create
+--editar
+curl -H "Content-Type: application/json" -X POST -d '{"actividad":{ "actividad":"1","resultado_intermedio":"1","nombre":"ejemplo de edición de nombre de actividad", "descripcion":"edición de actividad","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/actividades/edit
+
+
+TAREA
+--crear
+curl -H "Content-Type: application/json" -X POST -d '{"tarea":{ "tarea":"0" ,"actividad":"1","nombre":"crear tarea", "descripcion":"descripcion tarea","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/tareas/create
+--editar
+curl -H "Content-Type: application/json" -X POST -d '{"tarea":{ "tarea":"1" ,"actividad":"1","nombre":"ejemplo de edición de nombre tarea", "descripcion":"edición de tarea","fecha_inicio_plan":"2018-06-06", "duracion": "90", "fecha_inicio_actual":"2018-06-06"}}' http://localhost:3000/tareas/edit
+
+USUARIO
+-- crear
+curl -H "Content-Type: application/json" -X POST -d '{"usuario":{ "usuario":0 ,"nombre_usuario":"test","persona":1, "password":"123456"}}' http://localhost:3000/usuarios/register
+--login
+curl -H "Content-Type: application/json" -X POST -d '{"usuario":{ "usuario":0 ,"nombre_usuario":"test", "password":"123456"}}' http://localhost:3000/usuarios/login
+--editar informacion
+curl -H "Content-Type: application/json" -X POST -d '{"usuario":{ "usuario":1 ,"nombre_usuario":"test edicion"}}' http://localhost:3000/usuarios/edit
+
+
+ROL
+-- crear
+curl -H "Content-Type: application/json" -X POST -d '{"rol":{ "rol":0 ,"nombre":"rol", "descripcion":"descripcion de rol"}}' http://localhost:3000/roles/create
+--editar
+curl -H "Content-Type: application/json" -X POST -d '{"rol":{ "rol":0 ,"nombre":"rol", "descripcion":"descripcion de rol editado"}}' http://localhost:3000/roles/edit
+
+
+ACTA CONSTITUCION
+-- crear
+curl -H "Content-Type: application/json" -X POST -d '{"acta_constitucion":{ "entidad":0 ,"nombre":"rol", "descripcion":"descripcion"}}' http://localhost:3000/acta_constitucion/create
+--editar
+curl -H "Content-Type: application/json" -X POST -d '{"acta_constitucion":{ "entidad":0 ,"nombre":"rol", "descripcion":"descripcion"}}' http://localhost:3000/acta_constitucion/edit
+
+
+-- set disable
+curl -H "Content-Type: application/json" -X POST -d '{"ids":[1,2]}' http://localhost:3000/roles/disable

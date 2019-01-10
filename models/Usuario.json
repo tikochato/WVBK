@@ -1,0 +1,1 @@
+{"nombre":"Usuario","columnas":["nombre_usuario","password","persona","usuario_creo","usuario_actualizo","fecha_creacion","fecha_actualizacion","estado"],"llaves":["usuario"]}

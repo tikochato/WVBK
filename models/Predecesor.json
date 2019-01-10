@@ -1,0 +1,1 @@
+{"nombre":"Predecesor","columnas":["id","source","target","type","lag"],"llaves":["nodo_source","nodo_tipo_source","nodo_target","nodo_tipo_target","proyecto"]}
